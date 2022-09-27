@@ -1,0 +1,257 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  box-sizing:border-box;
+  margin:0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Components/Images/backround2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    /* font-family: 'Poppins'; */
+	font-family: 'Montserrat', sans-serif;
+    font-size:10px;
+	margin: -20px 0 50px;
+
+   
+}
+
+.container {
+    background-color: #2c3539;
+    border-radius: 0px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+  min-width:370px;
+}
+
+.lg-view {
+  font-size:1rem;
+  margin-bottom:1rem;
+  text-align: start;
+  color: #59BAA1;
+ 
+}
+.form-container {
+  display:flex;
+  background-color: #2c3539;
+ 
+
+}
+
+.left-container {
+  flex:1;
+  height:480px;
+  background-color:white;
+}
+.right-container {
+  display:flex;
+  flex:1;
+  height:480px;
+ 
+  justify-content:center;
+  align-items:center;
+}
+
+.right-inner-container .textp{
+    display: flex;
+    margin-right: 30px;
+    margin-left: 0px;
+    color: white;
+    text-align: start;
+}
+
+.right-inner-container .textp1{
+    margin-left: 10px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 0.1px;
+}
+
+.left-container {
+  display:flex;
+  flex:1;
+  height:480px;
+  justify-content:center;
+  align-items:center;
+    color:#FFFFFF;
+}
+img{
+    width: 65%;
+    align-items: center;
+}
+
+.left-inner-container .right-inner-container{
+  height: 50vh;
+  width: 100%;
+}
+
+
+
+.left-container p {
+  font-size:0.9rem;
+  color: black;
+}
+
+.right-inner-container {
+  width:70%;
+  height:70%;
+  text-align:center;
+  margin-left: 30px;
+}
+
+.left-inner-container {
+  height:70%;
+  
+  width:80%;
+  text-align:center;
+  line-height:22px;
+}
+
+
+.left-inner-container .everytext{
+    font-size: 20px;
+    color: #434242;
+}
+
+.left-inner-container .allin{
+margin-top: 0vmax;
+color: #909290;
+text-shadow: 2px solid #909290 ;
+}
+
+
+input {
+    border-radius: 4px;
+	background-color: #6A7481;
+	border: none;
+    color: white;
+	padding: 12px 15px;
+	margin: 6px 0;
+	width: 100%;
+   
+  font-size:0.8rem;
+}
+
+::placeholder { 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+input:focus{
+  outline:none
+}
+
+button {
+	
+	color: #FFFFFF; 
+	font-size: 12px;
+	font-weight: bold;
+    border-radius: 4px;
+    background-color: #59BAA1;;
+	border: none;
+	padding: 12px 15px;
+	margin: 12px 0;
+	width: 100%;
+  font-size:0.8rem;
+	letter-spacing: 0.1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+  cursor:pointer;
+}
+
+button:hover {
+  opacity:0.7;
+}
+
+.close{
+    color: whitesmoke;
+   font-weight: 900;
+    margin: 4px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .left-container .right-container{
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+   
+ 
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+form p {
+  text-align:left;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .container .form-container {
+     display: flex;
+     flex-direction: column; 
+     margin-bottom: 20vmax;
+   
+     text-align: center;
+     align-items: center;
+     
+     width:100% !important;
+    }
+    .left-inner-container{
+        margin-top: 65vmax;
+        margin-left: 25vh;
+        align-items: center;
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+
+    .right-inner-container{
+      margin-top: 0px;
+      margin-left: 25vh;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+    }
+    .form-container input[type="text"],
+     input[type="email"]
+      {
+        display: flex;
+        flex-direction: column;
+        width:100% !important;
+    }
+  }
+
+  
+  form p {
+    text-align:left;
+  }
+
+
+
+
+
+
